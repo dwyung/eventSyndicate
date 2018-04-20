@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Admin</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>ADD AN EVENT</h1>
+        
+        <form id="event_form" method="POST" action="/events">
+            
+            <div id="event_title">
+                <div>
+                    <label for="name">
+                        Event title
+                    </label>
+                
+                    <input id="name" maxlength="255" name="event[name]" type="text" />
+                </div>
+            </div>
+            
+            <div id="event_location">
+                <div>
+                    <label for="location">
+                        Location
+                    </label>
+                
+                    <input  id="location" maxlength="255" name="event[location]" type="text" />
+                </div>
+            </div>
+            <div id="event_startdate">
+                <div>
+                    <label for="startdate">
+                        start date
+                    </label>
+                    <input  id="startdate" maxlength="255" name="event[startdate]" type="text" />
+                </div>
+            </div>
+            
+             <div id="event_starttime">
+                <div>
+                    <label for="starttime">
+                        start time
+                    </label>
+                    <input  id="starttime" maxlength="255" name="event[starttime]" type="text" />
+                </div>
+            </div>
+            <div id="event_enddate">
+                <div>
+                    <label for="enddate">
+                        end date
+                    </label>
+                    <input  id="enddate" maxlength="255" name="event[enddate]" type="text" />
+                </div>
+            </div>
+            
+             <div id="event_endtime">
+                <div>
+                    <label for="endtime">
+                        end time
+                    </label>
+                    <input  id="endtime" maxlength="255" name="event[endtime]" type="text" />
+                </div>
+            </div>
+            <div id="event_price">
+                <div>
+                    <label for="price">
+                        price
+                    </label>
+                    <input  id="price" name="event[price]" type="text" />
+                </div>
+            </div>
+            
+            <div id="event_currency">
+                <div>
+                    <label for="currency">
+                        currency
+                    </label>
+                    <input  id="currency" maxlength="3" name="event[currency]" type="text" />
+                </div>
+            </div>
+            <div id="event_timezone">
+                <div>
+                    <label for="timezone">
+                        timezone
+                    </label>
+                    <input  id="timezone" maxlength="255" name="event[timezone]" type="text" />
+                </div>
+            </div>
+            <div id="event_description">
+                <div>
+                    <label for="description">
+                        description
+                    </label>
+                    <input  id="description" maxlength="255" name="event[description]" type="text" />
+                </div>
+            </div>
+           <div id="event_merchant">
+                <div>
+                    <label for="merchant">
+                        merchant
+                    </label>
+                    <input  id="merchant" maxlength="255" name="event[merchant]" type="text" />
+                </div>
+            </div>
+            
+            <input type="submit">
+            
+        </form>
+
+  
+    </body>
+</html>
